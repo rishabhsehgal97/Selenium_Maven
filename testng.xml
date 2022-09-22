@@ -3,12 +3,11 @@
 <suite name="Suite">
   <test thread-count="5" name="Test">
   
-  <parameter name = "uname" value = "abc@xyz.com" />
-  <parameter name = "pwd" value = "ABC@1234" />
-  
+  <parameter name="uname" value="abc@xyz.com"/>
+  <parameter name="pwd" value="Abc@1234"/>
     <classes>
-      <class name="testcases.HomeTest"/>
-      <class name="testcases.SimplilearnLoginTest"/>
+     
+      <class name="testcases.SimplilearnLogin"/>
     </classes>
   </test> <!-- Test -->
 </suite> <!-- Suite -->

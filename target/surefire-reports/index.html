@@ -5,9 +5,8 @@
   <meta charset='utf-8'>
   <title>TestNG reports</title>
 
-    <link type="text/css" href="testng-reports1.css" rel="stylesheet" id="ultra" />
-    <link type="text/css" href="testng-reports.css" rel="stylesheet" id="retro" disabled="false"/>
-    <script type="text/javascript" src="jquery.min.js"></script>
+    <link type="text/css" href="testng-reports.css" rel="stylesheet" />
+    <script type="text/javascript" src="jquery-1.7.1.min.js"></script>
     <script type="text/javascript" src="testng-reports.js"></script>
     <script type="text/javascript" src="https://www.google.com/jsapi"></script>
     <script type='text/javascript'>
@@ -24,9 +23,8 @@
   <body>
     <div class="top-banner-root">
       <span class="top-banner-title-font">Test results</span>
-      <button class="button" id="button">Switch Retro Theme</button> <!-- button -->
       <br/>
-      <span class="top-banner-font-1">1 suite, 2 failed tests</span>
+      <span class="top-banner-font-1">1 suite</span>
     </div> <!-- top-banner-root -->
     <div class="navigator-root">
       <div class="navigator-suite-header">
@@ -40,7 +38,7 @@
         <div class="rounded-window">
           <div class="suite-header light-rounded-window-top">
             <a href="#" class="navigator-link" panel-name="suite-Suite">
-              <span class="suite-name border-failed">Suite</span>
+              <span class="suite-name border-passed">Suite</span>
             </a> <!-- navigator-link -->
           </div> <!-- suite-header light-rounded-window-top -->
           <div class="navigator-suite-content">
@@ -93,26 +91,7 @@
               <div class="suite-section-content">
                 <ul>
                   <li>
-                    <span class="method-stats">3 methods, 2 failed,   1 passed</span>
-                  </li>
-                  <li>
-                    <span class="method-list-title failed">Failed methods</span>
-                    <span class="show-or-hide-methods failed">
-                      <a href="#" panel-name="suite-Suite" class="hide-methods failed suite-Suite"> (hide)</a> <!-- hide-methods failed suite-Suite -->
-                      <a href="#" panel-name="suite-Suite" class="show-methods failed suite-Suite"> (show)</a> <!-- show-methods failed suite-Suite -->
-                    </span>
-                    <div class="method-list-content failed suite-Suite">
-                      <span>
-                        <img width="3%" src="failed.png"/>
-                        <a href="#" class="method navigator-link" panel-name="suite-Suite" title="testcases.SimplilearnLoginTest" hash-for-method="Test1">Test1</a> <!-- method navigator-link -->
-                      </span>
-                      <br/>
-                      <span>
-                        <img width="3%" src="failed.png"/>
-                        <a href="#" class="method navigator-link" panel-name="suite-Suite" title="testcases.SimplilearnLoginTest" hash-for-method="Test2">Test2</a> <!-- method navigator-link -->
-                      </span>
-                      <br/>
-                    </div> <!-- method-list-content failed suite-Suite -->
+                    <span class="method-stats">3 methods,   3 passed</span>
                   </li>
                   <li>
                     <span class="method-list-title passed">Passed methods</span>
@@ -123,7 +102,17 @@
                     <div class="method-list-content passed suite-Suite">
                       <span>
                         <img width="3%" src="passed.png"/>
-                        <a href="#" class="method navigator-link" panel-name="suite-Suite" title="testcases.HomeTest" hash-for-method="Test1">Test1</a> <!-- method navigator-link -->
+                        <a href="#" class="method navigator-link" panel-name="suite-Suite" title="testcases.SimplilearnLogin" hash-for-method="test1">test1</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Suite" title="testcases.SimplilearnLogin" hash-for-method="test2(abc@xyz.com, Abc@1234)">test2(abc@xyz.com, Abc@1234)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Suite" title="testcases.SimplilearnLogin" hash-for-method="test3">test3</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                     </div> <!-- method-list-content passed suite-Suite -->
@@ -138,93 +127,32 @@
     <div class="wrapper">
       <div class="main-panel-root">
         <div panel-name="suite-Suite" class="panel Suite">
-          <div class="suite-Suite-class-failed">
-            <div class="main-panel-header rounded-window-top">
-              <img src="failed.png"/>
-              <span class="class-name">testcases.SimplilearnLoginTest</span>
-            </div> <!-- main-panel-header rounded-window-top -->
-            <div class="main-panel-content rounded-window-bottom">
-              <div class="method">
-                <div class="method-content">
-                  <a name="Test1">
-                  </a> <!-- Test1 -->
-                  <span class="method-name">Test1</span>
-                  <div class="stack-trace">org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {&quot;method&quot;:&quot;css selector&quot;,&quot;selector&quot;:&quot;#pass&quot;}
-  (Session info: chrome=104.0.5112.102)
-For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
-Build info: version: &apos;3.141.59&apos;, revision: &apos;e82be7d358&apos;, time: &apos;2018-11-14T08:17:03&apos;
-System info: host: &apos;DESKTOP-8N2T49J&apos;, ip: &apos;192.168.1.14&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;1.8.0_202&apos;
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 104.0.5112.102, chrome: {chromedriverVersion: 103.0.5060.134 (8ec6fce403b..., userDataDir: C:\Users\DELL\AppData\Local...}, goog:chromeOptions: {debuggerAddress: localhost:53496}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
-Session ID: 57e9385190cfb3cf16015927cb126312
-*** Element info: {Using=id, value=pass}
-	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
-	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
-	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
-	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
-	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
-	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:323)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElementById(RemoteWebDriver.java:372)
-	at org.openqa.selenium.By$ById.findElement(By.java:188)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:315)
-	at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:69)
-	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)
-	at com.sun.proxy.$Proxy7.sendKeys(Unknown Source)
-	at pages.LoginPage.Login(LoginPage.java:46)
-	at testcases.SimplilearnLoginTest.Test1(SimplilearnLoginTest.java:16)
-	at java.util.ArrayList.forEach(ArrayList.java:1257)
-... Removed 35 stack frames
-</div> <!-- stack-trace -->
-                </div> <!-- method-content -->
-              </div> <!-- method -->
-              <div class="method">
-                <div class="method-content">
-                  <a name="Test2">
-                  </a> <!-- Test2 -->
-                  <span class="method-name">Test2</span>
-                  <div class="stack-trace">org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {&quot;method&quot;:&quot;css selector&quot;,&quot;selector&quot;:&quot;#pass&quot;}
-  (Session info: chrome=104.0.5112.102)
-For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
-Build info: version: &apos;3.141.59&apos;, revision: &apos;e82be7d358&apos;, time: &apos;2018-11-14T08:17:03&apos;
-System info: host: &apos;DESKTOP-8N2T49J&apos;, ip: &apos;192.168.1.14&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;1.8.0_202&apos;
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 104.0.5112.102, chrome: {chromedriverVersion: 103.0.5060.134 (8ec6fce403b..., userDataDir: C:\Users\DELL\AppData\Local...}, goog:chromeOptions: {debuggerAddress: localhost:53587}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
-Session ID: 44b4b184a7538a8710e4a8a4801bf256
-*** Element info: {Using=id, value=pass}
-	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
-	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
-	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
-	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
-	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
-	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:323)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElementById(RemoteWebDriver.java:372)
-	at org.openqa.selenium.By$ById.findElement(By.java:188)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:315)
-	at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:69)
-	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)
-	at com.sun.proxy.$Proxy7.sendKeys(Unknown Source)
-	at pages.LoginPage.Login(LoginPage.java:46)
-	at testcases.SimplilearnLoginTest.Test2(SimplilearnLoginTest.java:33)
-	at java.util.ArrayList.forEach(ArrayList.java:1257)
-... Removed 35 stack frames
-</div> <!-- stack-trace -->
-                </div> <!-- method-content -->
-              </div> <!-- method -->
-            </div> <!-- main-panel-content rounded-window-bottom -->
-          </div> <!-- suite-Suite-class-failed -->
           <div class="suite-Suite-class-passed">
             <div class="main-panel-header rounded-window-top">
               <img src="passed.png"/>
-              <span class="class-name">testcases.HomeTest</span>
+              <span class="class-name">testcases.SimplilearnLogin</span>
             </div> <!-- main-panel-header rounded-window-top -->
             <div class="main-panel-content rounded-window-bottom">
               <div class="method">
                 <div class="method-content">
-                  <a name="Test1">
-                  </a> <!-- Test1 -->
-                  <span class="method-name">Test1</span>
+                  <a name="test1">
+                  </a> <!-- test1 -->
+                  <span class="method-name">test1</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="test2(abc@xyz.com, Abc@1234)">
+                  </a> <!-- test2(abc@xyz.com, Abc@1234) -->
+                  <span class="method-name">test2</span>
+                  <span class="parameters">(abc@xyz.com, Abc@1234)</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="test3">
+                  </a> <!-- test3 -->
+                  <span class="method-name">test3</span>
                 </div> <!-- method-content -->
               </div> <!-- method -->
             </div> <!-- main-panel-content rounded-window-bottom -->
@@ -237,12 +165,13 @@ Session ID: 44b4b184a7538a8710e4a8a4801bf256
           <div class="main-panel-content rounded-window-bottom">
             <pre>
 &lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;
-&lt;!DOCTYPE suite SYSTEM &quot;https://testng.org/testng-1.0.dtd&quot;&gt;
+&lt;!DOCTYPE suite SYSTEM &quot;http://testng.org/testng-1.0.dtd&quot;&gt;
 &lt;suite guice-stage=&quot;DEVELOPMENT&quot; verbose=&quot;0&quot; name=&quot;Suite&quot;&gt;
   &lt;test thread-count=&quot;5&quot; verbose=&quot;0&quot; name=&quot;Test&quot;&gt;
+    &lt;parameter name=&quot;uname&quot; value=&quot;abc@xyz.com&quot;/&gt;
+    &lt;parameter name=&quot;pwd&quot; value=&quot;Abc@1234&quot;/&gt;
     &lt;classes&gt;
-      &lt;class name=&quot;testcases.HomeTest&quot;/&gt;
-      &lt;class name=&quot;testcases.SimplilearnLoginTest&quot;/&gt;
+      &lt;class name=&quot;testcases.SimplilearnLogin&quot;/&gt;
     &lt;/classes&gt;
   &lt;/test&gt; &lt;!-- Test --&gt;
 &lt;/suite&gt; &lt;!-- Suite --&gt;
@@ -256,7 +185,7 @@ Session ID: 44b4b184a7538a8710e4a8a4801bf256
           <div class="main-panel-content rounded-window-bottom">
             <ul>
               <li>
-                <span class="test-name">Test (2 classes)</span>
+                <span class="test-name">Test (1 class)</span>
               </li>
             </ul>
           </div> <!-- main-panel-content rounded-window-bottom -->
@@ -284,22 +213,22 @@ data.addColumn('string', 'Class');
 data.addColumn('number', 'Time (ms)');
 data.addRows(3);
 data.setCell(0, 0, 0)
-data.setCell(0, 1, 'Test1')
-data.setCell(0, 2, 'testcases.SimplilearnLoginTest')
-data.setCell(0, 3, 13240);
+data.setCell(0, 1, 'test1')
+data.setCell(0, 2, 'testcases.SimplilearnLogin')
+data.setCell(0, 3, 16539);
 data.setCell(1, 0, 1)
-data.setCell(1, 1, 'Test2')
-data.setCell(1, 2, 'testcases.SimplilearnLoginTest')
-data.setCell(1, 3, 11893);
+data.setCell(1, 1, 'test3')
+data.setCell(1, 2, 'testcases.SimplilearnLogin')
+data.setCell(1, 3, 10267);
 data.setCell(2, 0, 2)
-data.setCell(2, 1, 'Test1')
-data.setCell(2, 2, 'testcases.HomeTest')
-data.setCell(2, 3, 3);
+data.setCell(2, 1, 'test2')
+data.setCell(2, 2, 'testcases.SimplilearnLogin')
+data.setCell(2, 3, 8433);
 window.suiteTableData['Suite']= { tableData: data, tableDiv: 'times-div-Suite'}
 return data;
 }
               </script>
-              <span class="suite-total-time">Total running time: 25 seconds</span>
+              <span class="suite-total-time">Total running time: 35 seconds</span>
               <div id="times-div-Suite">
               </div> <!-- times-div-Suite -->
             </div> <!-- times-div -->
@@ -325,54 +254,54 @@ return data;
           </div> <!-- main-panel-header rounded-window-top -->
           <div class="main-panel-content rounded-window-bottom">
             <div class="chronological-class">
-              <div class="chronological-class-name">testcases.HomeTest</div> <!-- chronological-class-name -->
-              <div class="configuration-method before">
-                <span class="method-name">setup</span>
+              <div class="chronological-class-name">testcases.SimplilearnLogin</div> <!-- chronological-class-name -->
+              <div class="configuration-test before">
+                <span class="method-name">DataSetup</span>
                 <span class="method-start">0 ms</span>
-              </div> <!-- configuration-method before -->
-              <div class="test-method">
-                <span class="method-name">Test1</span>
-                <span class="method-start">30474 ms</span>
-              </div> <!-- test-method -->
-              <div class="configuration-method after">
-                <span class="method-name">TearDown</span>
-                <span class="method-start">30487 ms</span>
-              </div> <!-- configuration-method after -->
-            </div> <!-- chronological-class -->
-            <div class="chronological-class">
-              <div class="chronological-class-name">testcases.SimplilearnLoginTest</div> <!-- chronological-class-name -->
+              </div> <!-- configuration-test before -->
               <div class="configuration-method before">
-                <span class="method-name">setup</span>
-                <span class="method-start">32593 ms</span>
+                <span class="method-name">Setup(public void testcases.SimplilearnLogin.test1())</span>
+                <span class="method-start">2424 ms</span>
               </div> <!-- configuration-method before -->
               <div class="test-method">
-                <img src="failed.png">
-                </img>
-                <span class="method-name">Test1</span>
-                <span class="method-start">44557 ms</span>
+                <span class="method-name">test1</span>
+                <span class="method-start">14007 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method after">
-                <span class="method-name">TearDown</span>
-                <span class="method-start">57842 ms</span>
+                <span class="method-name">Teardown</span>
+                <span class="method-start">30548 ms</span>
               </div> <!-- configuration-method after -->
               <div class="configuration-method before">
-                <span class="method-name">setup</span>
-                <span class="method-start">58725 ms</span>
+                <span class="method-name">Setup(public void testcases.SimplilearnLogin.test2(java.lang.String,java.lang.String))</span>
+                <span class="method-start">30793 ms</span>
               </div> <!-- configuration-method before -->
               <div class="test-method">
-                <img src="failed.png">
-                </img>
-                <span class="method-name">Test2</span>
-                <span class="method-start">65197 ms</span>
+                <span class="method-name">test2(abc@xyz.com, Abc@1234)</span>
+                <span class="method-start">39146 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method after">
-                <span class="method-name">TearDown</span>
-                <span class="method-start">77092 ms</span>
+                <span class="method-name">Teardown</span>
+                <span class="method-start">47580 ms</span>
               </div> <!-- configuration-method after -->
+              <div class="configuration-method before">
+                <span class="method-name">Setup(public void testcases.SimplilearnLogin.test3())</span>
+                <span class="method-start">47786 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">test3</span>
+                <span class="method-start">55588 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">Teardown</span>
+                <span class="method-start">65855 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-test after">
+                <span class="method-name">DataClean</span>
+                <span class="method-start">66235 ms</span>
+              </div> <!-- configuration-test after -->
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->
       </div> <!-- main-panel-root -->
     </div> <!-- wrapper -->
   </body>
-<script type="text/javascript" src="testng-reports2.js"></script>
 </html>
